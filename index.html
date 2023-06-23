@@ -28,67 +28,59 @@
 
 <body>
     <!-- Navbar -->
-    <header id="navbar" class="absolute z-30 w-full py-9 px-4 md:px-16">
+    <header id="navbar" class="drop-shadow-lg w-full py-9 px-4 md:px-16 ">
         <!-- Menu Logo -->
-        <div>
-            <a id="menu-logo" href="/index.html">
-                <img src="/assets/images/logo-brand.png" alt="UPBRANDS">
+        <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
+            <a href="/index.html">
+                <img class="h-auto block max-w-[230px] w-[230px] justify-start" src="/assets/images/logo-brand.png" alt="UPBRANDS">
             </a>
-        </div>
-        <!-- Menu Logo -->
+            <!-- Menu Logo -->
 
-        <nav id="menu">
 
-            <!-- Menú Container -->
-            <div class="container">
-                <!-- Bars Collapse -->
-                <!-- <a id="menu-bars"><span></span><span></span><span></span></a> -->
-                <!-- Bars Collapse -->
+            <ul id="menu"
+                class="hidden fixed top-0 right-0 px-10 py-16 bg-black z-50
+                md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6 flex w-full justify-end text-base font-semibold text-white uppercase">
 
-                <!-- Menu -->
-                <div id="menu-wrapper">
-                    <div id="menu-items">
-                        <ul id="menu-list"
-                            class="flex w-full justify-end text-base font-semibold text-white uppercase">
-                            <li id="menu-item"> <a id="menu-link" href="#">Home</a></li>
-                            <li id="menu-item"> <a id="menu-link" href="#">Nosotros</a></li>
-                            <li id="menu-item"> <a id="menu-link" href="#">Soluciones</a></li>
-                            <li id="menu-item"> <a id="menu-link" href="#">Experiencia</a></li>
-                            <li id="menu-item"> <a id="menu-link" href="#">Contacto</a></li>
-                            <li id="menu-item"> <a id="menu-link" href="#">En</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Menu -->
+                <li class="md:hidden z-90 fixed top-4 right-6">
+                    <a href="javascript:void(0)" class="text-right text-white text-4xl"
+                        onclick="toggleMenu()">&times;</a>
+                </li>
+
+                <li> <a class="ml-6 hover:text-pink-400" href="#">Home</a></li>
+                <li> <a class="ml-6 hover:text-pink-400" href="#">Nosotros</a></li>
+                <li> <a class="ml-6 hover:text-pink-400" href="#">Soluciones</a></li>
+                <li> <a class="ml-6 hover:text-pink-400" href="#">Experiencia</a></li>
+                <li> <a class="ml-6 hover:text-pink-400" href="#">Contacto</a></li>
+                <li> <a class="ml-6 hover:text-pink-400" href="#">En</a></li>
+            </ul>
+
+
+            <div class="flex items-end md:hidden">
+                <button class="text-white text-2xl font-bold hover:opacity-100 duration-300" onclick="toggleMenu()">
+                    &#9776;
+                </button>
+                <li> <a class="text-base font-semibold text-white uppercase hover:text-pink-400" href="#">En</a></li>
             </div>
-            <!-- Menú Container -->
-        </nav>
+
+        </div>
     </header>
-    <!-- Header and Navbar -->
-    </div>
+    <!-- Navbar -->
 
     <!-- Main -->
-    <main id="main-section" class="h-screen w-screen">
-        <header id="main-slogan" class="absolute uppercase text-white text-left	z-30 w-full py-9 px-4 md:px-16">
-            <div id="slogan">
-                <h1 class="">Creamos <strong class="text-pink-400">soluciones efectivas</strong>
-                    para empresas
-                    inmersas en un mundo
-                    digital</h1>
+    <main class="z-30 pb-9 pt-24 px-4 md:px-16 h-screen sm:pt-48">
+        <div class="uppercase text-white text-left md:pt-[10%]">
+            <div>
+                <h1 class="md:text-[44px] md:leading-[68px] leading-[40px] text-[30px]">Creamos <strong class="text-pink-400">soluciones
+                        efectivas</strong> para empresas inmersas en un mundo digital</h1>
             </div>
-            <div class="">
+            <div class="pt-5">
                 <button
                     class="border-2 border-white h-12 w-72 uppercase text-base font-light hover:border-pink-400 hover:bg-pink-400 ">Te
                     invitamos a Conocernos</button>
             </div>
-        </header>
+        </div>
     </main>
     <!-- Main -->
-
-
-
-
-
     <script src="assets/js/main.js"></script>
 </body>
 
