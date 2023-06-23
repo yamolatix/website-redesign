@@ -1,0 +1,47 @@
+/*
+1. navbar 
+2. Main
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+
+
+/* 1. navbar */
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-logo {
+    height: auto;
+    display: block;
+    max-width: 230px;
+    width: 230px;
+}
+
+#menu-item {
+    margin-left: 1.5rem;
+}
+
+
+#menu-item:hover {
+    color: rgb(244 114 182);
+}
+
+/* header and navbar */
+
+
+/* Main */
+
+#slogan {
+    font-size: 44px;
+    line-height: 68px;
+}
+
+/* Main */
