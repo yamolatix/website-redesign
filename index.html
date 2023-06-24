@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Fots -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -29,22 +29,22 @@
 <body>
     <!-- Navbar -->
     <header id="navbar" class="drop-shadow-lg w-full py-9 px-4 md:px-16 lg:px-16 ">
-        <!-- Menu Logo -->
         <div class="flex justify-between">
+            <!-- Menu Logo -->
             <a href="/index.html">
                 <img class="h-auto block max-w-[230px] w-[230px]" src="/assets/images/logo-brand.png" alt="UPBRANDS">
             </a>
-            <!-- Menu Logo -->
 
-
+            <!-- Menu Items -->
             <ul id="menu"
-                class="hidden fixed top-0 right-0 px-10 py-16 bg-black z-50 flex justify-end md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6  md:w-full text-base font-semibold text-white uppercase">
+                class="hidden fixed top-0 right-0 px-10 py-16 bg-black z-50 justify-end md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6 md:w-full text-base font-semibold text-white uppercase">
 
+                <!-- "X" icon when Responsive Menu is opened  -->
                 <li class="md:hidden z-90 fixed top-4 right-6">
                     <a href="javascript:void(0)" class="text-right text-white text-4xl"
                         onclick="toggleMenu()">&times;</a>
                 </li>
-
+                <!-- Menu List -->
                 <li> <a class="hover:text-pink-400" href="#">Home</a></li>
                 <li> <a class="hover:text-pink-400" href="#">Nosotros</a></li>
                 <li> <a class="hover:text-pink-400" href="#">Soluciones</a></li>
@@ -53,24 +53,28 @@
                 <li> <a class="hover:text-pink-400" href="#">En</a></li>
             </ul>
 
-
+            <!-- Menu Items - Responsive -->
             <div class="flex items-end md:hidden">
-                <button class="text-white text-2xl font-bold hover:opacity-100 duration-300" onclick="toggleMenu()">
+                <!-- Bars -->
+                <button class="text-white text-2xl font-bold hover:opacity-100 duration-300 leading-none" onclick="toggleMenu()">
                     &#9776;
                 </button>
-                <li> <a class="text-base font-semibold text-white uppercase hover:text-pink-400" href="#">En</a></li>
+                <!-- EN Menu List -->
+                <a class="text-base font-semibold text-white uppercase hover:text-pink-400 ml-6" href="#">En</a>
             </div>
-
         </div>
     </header>
     <!-- Navbar -->
 
     <!-- Main -->
-    <main class="z-30 pb-9 md:pt-24 pt-12 md:px-16 px-4 h-full ">
+    <main class="z-30 pb-9 md:pt-[10%] pt-[25%] md:px-16 px-4 h-full">
+        <!-- Global Container -->
         <div class="uppercase text-white text-left">
-            <h1 class="md:text-[44px] md:leading-[68px] leading-[46px] text-[40px]">Creamos <strong
+            <!-- Slogan -->
+            <h1 class="md:text-[44px] md:leading-[68px] leading-[46px] text-[30px]">Creamos <strong
                     class="text-pink-400">soluciones
                     efectivas</strong> para empresas inmersas en un mundo digital</h1>
+            <!-- Container Button -->
             <div class="pt-5">
                 <button
                     class="border-2 border-white h-12 w-72 uppercase text-base font-light hover:border-pink-400 hover:bg-pink-400 ">Te
@@ -79,6 +83,8 @@
         </div>
     </main>
     <!-- Main -->
+
+    <!-- JavaScript file -->
     <script src="assets/js/main.js"></script>
 </body>
 

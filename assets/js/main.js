@@ -1,3 +1,5 @@
+// Responsive Toggle
+
 var menu = document.getElementById('menu');
 function toggleMenu() {
     menu.classList.toggle('hidden');
